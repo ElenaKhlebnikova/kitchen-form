@@ -1,6 +1,6 @@
 # 🍴Create Kitchen Form
 
-Welcome to Create Kitchen Form repository! This form is a part of the application I've collaborated on. 
+Welcome to Create Kitchen Form repository! This form is a part of an application I've collaborated on. 
 
 
 
