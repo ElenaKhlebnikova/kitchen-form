@@ -69,7 +69,7 @@ Click  [here]([https://startling-travesseiro-2774de.netlify.app/]) to view the p
 1. Building multiple select and registering it and validation using useForm hook. 
 2. Validating custom fields as it is much harder to do than with regular fields since I needed to set errors and clear them when the value is updated. It was not so clear how to do it the right way at first to get the needed behaviour.
 3. Using Cloudinary to upload signed photos. I am sorry, but Next.js feat. Cloudinary documentation is useless. Cloudinary documentation seems to be a bit outdated and it was hard figure out the way to sign the photos.
-4. Using Cloudinary to delete signed photos. Same issue as in 3, but much easier then dealing with the documentation for the first time.
+4. Using Cloudinary to delete signed photos. Same issue as in 3, but much easier than dealing with the documentation for the first time.
 5. Building availbility fields using useFieldsArray from useForm. 
 6. Building availability field for non-recurring dates. The difficulty was with different the date formats and setting only 3 month from the current date as available fields in the date input. But after cloudinary it's not too much of a struggle. 
 7. Validating custom availability fields. The main difficulty is that for form validation only one of these fields is required + these are custom fields. So it was hard to figure out the right way to clear errors.
