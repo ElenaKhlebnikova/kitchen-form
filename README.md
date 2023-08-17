@@ -13,6 +13,7 @@ This form is built with the following tech stack:
 | Technology                                                          | Usage                                                                                                          |
 | ------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------- |
 | Next.js 13 (App Router)                                | Meta React framework for building the application         |
+| Vercel                             | To deploy the application       |
 |Typescript | To ensure type safety |
 |React hook form | To manage the state of the form
 | Cloudinary | To upload\delete photos |
@@ -57,12 +58,14 @@ Click  [here](https://startling-travesseiro-2774de.netlify.app/) to view the pro
 1. Using React Hook Form.
 2. Registering and validating custom fields with React Hook Form.
 4. Building custom multiple select component.
-5. Using Cloudinary to upload signed/unsigned photos.
-6. Using Cloudinary to delete signed/unsigned photos.
-7. Using Next.js features: file system routing, managing client and server env variables, using route handlers as backend for uploading/deleting photos.
-9. How to use Tailwind to build responsive UI much faster.
-10. Working on different branches in small PRs. 
-11. Resolving git conflicts.
+5. How to deploy Next.js applications to Vercel (I have previously used Netlify).
+6. How to add server and client env variables to vercel.
+7. Using Cloudinary to upload signed/unsigned photos.
+8. Using Cloudinary to delete signed/unsigned photos.
+9. Using Next.js features: file system routing, managing client and server env variables, using route handlers as backend for uploading/deleting photos.
+10. How to use Tailwind to build responsive UI much faster.
+11. Working on different branches in small PRs. 
+12. Resolving git conflicts.
 
 
 ## 😭 What I struggled with
