@@ -1,7 +1,6 @@
 import type { Control, UseFormClearErrors, UseFormRegister, UseFormSetError, UseFormSetValue } from 'react-hook-form';
 import type { Photo, TFormFields } from '../_types';
 import type { MouseEvent } from 'react';
-import type { CldUploadWidgetResults } from 'next-cloudinary';
 
 import { CldImage, CldUploadWidget, CldUploadWidgetPropsOptions } from 'next-cloudinary';
 import { faStar, faTrash } from '@fortawesome/free-solid-svg-icons';
@@ -11,7 +10,7 @@ import { useEffect } from 'react';
 import { useWatch } from 'react-hook-form';
 
 interface Result {
-  info: {
+  info?: {
     secure_url: string;
     public_id: string;
   };
