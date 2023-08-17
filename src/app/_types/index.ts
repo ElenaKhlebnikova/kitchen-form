@@ -11,8 +11,8 @@ export interface RecurringDate {
 }
 
 export interface Photo {
-  secure_url: string;
-  photo_id: string;
+  secure_url: string | undefined;
+  photo_id: string | undefined;
 }
 
 export interface TFormFields {

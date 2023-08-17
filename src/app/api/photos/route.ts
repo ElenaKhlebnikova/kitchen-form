@@ -4,7 +4,7 @@ import { NextResponse } from 'next/server';
 export const POST = async (request: Request) => {
   try {
     const body = await request.json();
-    const signature = cloudinary.utils.api_sign_request(body.paramsToSign, process.env.CLOUDINARY_API_SECRET);
+    const signature = cloudinary.utils.api_sign_request(body.paramsToSign, process.env.CLOUDINARY_API_SECRET!);
 
     return NextResponse.json({ signature });
   } catch (error) {
@@ -14,6 +14,6 @@ export const POST = async (request: Request) => {
     }
 
     console.error(error);
-    return NextResponse.json({ message: "Something went wrong"}, { status: 500 });
+    return NextResponse.json({ message: 'Something went wrong' }, { status: 500 });
   }
 };

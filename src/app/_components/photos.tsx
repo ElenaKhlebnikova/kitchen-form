@@ -1,6 +1,7 @@
 import type { Control, UseFormClearErrors, UseFormRegister, UseFormSetError, UseFormSetValue } from 'react-hook-form';
 import type { Photo, TFormFields } from '../_types';
 import type { MouseEvent } from 'react';
+import type { CldUploadWidgetResults } from 'next-cloudinary';
 
 import { CldImage, CldUploadWidget, CldUploadWidgetPropsOptions } from 'next-cloudinary';
 import { faStar, faTrash } from '@fortawesome/free-solid-svg-icons';
@@ -8,7 +9,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Tooltip from './tooltip';
 import { useEffect } from 'react';
 import { useWatch } from 'react-hook-form';
-
 
 interface Result {
   info: {
@@ -21,9 +21,6 @@ const options = {
   cloud_name: process.env.NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME,
   api_key: process.env.NEXT_PUBLIC_CLOUDINARY_API_KEY,
 } as CldUploadWidgetPropsOptions;
-
-
-
 
 const Photos = ({
   register,
@@ -56,7 +53,8 @@ const Photos = ({
 
   const handleUploadPhoto = (result: Result) => {
     const newPhotosUrls = [...photos];
-    newPhotosUrls.push({ secure_url: result?.info.secure_url, photo_id: result?.info.public_id });
+
+    newPhotosUrls.push({ secure_url: result.info?.secure_url, photo_id: result.info?.public_id });
 
     setValue('photos', newPhotosUrls);
   };
@@ -132,7 +130,7 @@ const Photos = ({
                   <CldImage
                     width="600"
                     height="400"
-                    src={photo.secure_url}
+                    src={photo.secure_url!}
                     alt="Picture of the kitchen"
                     className="shadow-sm rounded-md border"
                   />
