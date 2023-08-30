@@ -1,6 +1,6 @@
 # 🍴Create Kitchen Form
 
-Welcome to Create Kitchen Form repository! This form is a part of an application I've collaborated on which allows users to rent out their kitchens. This form allows users to iclude a wide variety of information to their kitchen's listing such as: description, location, photos, host's languages, rules and availability (recurring and non-recurring).
+Welcome to Create Kitchen Form repository! This form is a part of an application I've collaborated on which allows users to rent out their kitchens. This form allows users to include a wide variety of information to their kitchen's listing such as: description, location, photos, host's languages, rules and availability (recurring and non-recurring).
 
 Click  [here](https://startling-travesseiro-2774de.netlify.app/) to view the project.
 
